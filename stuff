@@ -1,0 +1,18 @@
+FirstName = "Charlie"
+LastName = "Brown"
+age = 66
+NYC = 1965
+pet_name = "Fido"
+fav_food = "pizza"
+
+MyBio = f"{FirstName} {LastName} is {age} years old. He has been living in Queens since {NYC}. {FirstName} lives with his dog {pet_name} and they both love eating {fav_food}."
+
+print(MyBio)
+
+def SplitTheBill():
+  ppl = int(input("How many people?"))
+  bill = float(input("How much was the bill?"))
+  tip = float(input("How much is the tip?"))
+  share = (1 + tip) * bill/ppl
+  share = round(share,2)
+  return share
