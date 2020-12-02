@@ -16,3 +16,111 @@ def SplitTheBill():
   share = (1 + tip) * bill/ppl
   share = round(share,2)
   return share
+
+  def SplitTheBill():
+  ppl = int(input("How many people?"))
+  bill = float(input("How much was the bill?"))
+  tip = float(input("How much is the tip?"))
+  share = (1 + tip) * bill/ppl
+  share = round(share,2)
+  return share
+
+age = 66
+if age >= 65:
+  print("You get a discount!")
+elif age <= 5:
+  print("You get in for free!")
+elif age <= 18:
+  print("You get a student discount.")
+else:
+  print("You pay full price.")
+
+pizza = input("Do you like pizza?Write Yes or No.")
+
+pizza = pizza.lower()
+
+if pizza == "yes":
+  print("I like pizza too!")
+else:
+  print("Why don't you like it?")
+  
+#set has no order 
+#lists have order
+list1 = ["joe","tom","susan"]
+print(list1[0:-1]) #give me the 0 element in this list (meaning the first thing )
+list1.append("april")
+print(list1)
+list1.remove("joe")
+print(list1)
+
+cool_list = [] 
+for some_person in list1:
+  cool_list.append(f"{some_person.title()} is cool.")
+
+print(cool_list)
+
+list_of_nums = [1,2,3,4,5,6]
+# list_of_nums_plus1 = [] 
+# for n in list_of_nums:
+#   list_of_nums_plus1.append(n + 1)
+
+list_of_nums_plus1 = [n+1 for n in list_of_nums]
+
+
+print(list_of_nums_plus1)
+
+for i in range(10):
+  print("pizza")
+
+  #set has no order 
+#lists have order
+list1 = ["joe","tom","susan"]
+print(list1[0:-1]) #give me the 0 element in this list (meaning the first thing )
+list1.append("april")
+print(list1)
+list1.remove("joe")
+print(list1)
+
+cool_list = [] 
+for some_person in list1:
+  cool_list.append(f"{some_person.title()} is cool.")
+
+print(cool_list)
+
+list_of_nums = [1,2,3,4,5,6]
+# list_of_nums_plus1 = [] 
+# for n in list_of_nums:
+#   list_of_nums_plus1.append(n + 1)
+
+list_of_nums_plus1 = [n+1 for n in list_of_nums]
+
+
+print(list_of_nums_plus1)
+
+for i in range(10):
+  print("pizza")
+
+  import random 
+wins = 0
+n_games = 1
+for i in range(n_games):
+  score = 0
+  while score < 21: 
+    hand = random.randint(1,10)
+    score = score + hand
+    #print("new score:", score)
+  if score == 21:
+    wins = wins + 1
+
+print(f"You won {wins} times and lost {n_games - wins} times")
+
+card_list = ["AH","AS","AD","AC","KH","5H"]
+card_values = {"AH":10,"AS":10,"AD":10,"AC":10,"KH":10,
+              "5H": 5
+              }
+
+my_hand = ["5H","KH"]
+
+hand_values = [card_values[card] for card in my_hand]
+hand_values = sum(hand_values)
+print(f"Your hand is worth {hand_values}.")
